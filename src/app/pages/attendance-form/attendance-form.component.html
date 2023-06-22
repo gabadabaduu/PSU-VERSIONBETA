@@ -1,0 +1,12 @@
+<h1>Registro de Asistencia</h1>
+<form (submit)="registerAttendance()">
+  <label for="childName">Nombre del niño:</label>
+  <input type="text" id="childName" required [(ngModel)]="childName">
+  <label for="attendanceStatus">Estado:</label>
+  <select id="attendanceStatus" required [(ngModel)]="attendanceStatus">
+    <option value="entrada">Entrada</option>
+    <option value="salida">Salida</option>
+  </select>
+  <button type="submit">Registrar</button>
+</form>
+
